@@ -1,0 +1,20 @@
+
+{%extends 'testapp/base.html'%}
+
+{% block content%}
+    <h1 id="details ">Tea Details</h1>
+
+    <div class="container" id="det">
+        <p>Tea name :{{tea.name}}</p>
+        <p>Tea description:{{tea.description}}</p>
+        <p>Tea price :{{tea.price}}</p>
+</div>
+    <br><br>
+    <a href="/" class="btn btn-primary btn-lg">Home Page</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <a href="/update/{{tea.id}}" class="btn btn-primary btn-lg">Update Tea</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <a href="/delete/{{tea.id}}" class="btn btn-danger btn-lg">Delete Tea</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+
+
+
+{% endblock %}

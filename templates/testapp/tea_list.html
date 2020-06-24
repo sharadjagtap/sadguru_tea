@@ -1,0 +1,29 @@
+
+{%extends 'testapp/base.html'%}
+
+{% block content%}
+    <h1 id="list">Tea List</h1>
+        <table border="3">
+            <thead>
+            <td>Tea Name</td>
+            <td>Tea Description</td>
+            <td>Update Tea</td>
+            <td>Delete Tea</td>
+            </thead>
+            {%for tea in tea_list%}
+            <tbody bgcolor="#fcb603">
+            <td><a href="{{tea.id}}">{{tea.name|title}}</a></td>
+            <td><a href="/{{tea.id}}">Details</a> </td>
+            <td><a href="update/{{tea.id}}">Update</a> </td>
+            <td><a href="delete/{{tea.id}}">Delete</a> </td>
+
+            </tbody>
+
+            {%endfor%}
+
+        </table><br>
+        <h1>Do you want to add new tea flavour?</h1><br>
+        <a href="/create" class="btn btn-primary btn-lg">Add Tea</a>
+
+
+{% endblock %}

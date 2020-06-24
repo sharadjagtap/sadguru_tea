@@ -1,0 +1,23 @@
+
+{%extends 'testapp/base.html'%}
+
+{% block content%}
+    <h1>Do you really want to delete {{tea.name}}</h1>
+
+    <form method="post">
+        {%csrf_token%}
+        <input type="submit" class="btn btn-danger btn-lg" value="Delete Record">
+        <a href="/{{tea.id}}" class="btn btn-success btn-lg">Cancel</a>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
