@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 # Create your views here.
 from testapp.models import Tea
 from django.views.generic import ListView,DetailView,CreateView,UpdateView,DeleteView
