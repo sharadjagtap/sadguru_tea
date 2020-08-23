@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-# sharad
+# Sharad Jagtap learned git perfectly now
 
 from testapp.models import Tea
 
